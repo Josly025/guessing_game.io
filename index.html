@@ -7,11 +7,12 @@
       rel="stylesheet"
       href="https://bootswatch.com/4/materia/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="container">
-      <div class="row justify-content-md-center">
+      <div class="row justify-content-md-center m-3">
         <!--card-->
         <div class="card text-white bg-info mb-3" style="max-width: 40rem">
           <div class="card-header"><h2>Number Guessing Game</h2></div>
@@ -26,8 +27,25 @@
           </div>
         </div>
       </div>
+      <!--Second row-->
+
       <div class="row justify-content-md-center">
-        <div class="col-sm">This is the second Row</div>
+        <div class="col">
+          <button type="button" class="btn btn-outline-info">
+            Submit Guess!
+          </button>
+        </div>
+        <div class="col">
+          <div class="form-group">
+            <label class="col-form-label" for="inputDefault"></label>
+            <input
+              type="text"
+              class="form-control border border-info p-2"
+              placeholder="Insert Number Here"
+              id="inputDefault"
+            />
+          </div>
+        </div>
       </div>
     </div>
 
