@@ -1,10 +1,24 @@
-.form-group {
-  width: 50%;
-  margin-right: 25%;
-}
+body {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(255, 255, 255, 0) 50%
+  );
+  background-repeat: no-repeat;
 
+background-attachment: fixed;
+
+background-position: top-center;
+
+background-size: contain:
+}
 button {
   width: 40%;
   margin-top: 7%;
   margin-left: 60%;
+}
+
+.form-group {
+  width: 50%;
+  margin-right: 25%;
 }
