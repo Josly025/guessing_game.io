@@ -16,7 +16,7 @@ function checkGuess(e) {
   if (isNaN(guess) | (guess > max) | (guess < min)) {
     alert.innerHTML = ` <div class="alert alert-dismissible alert-danger">
       <button type="button" class="close" data-dismiss="alert">
-        &times;
+        
       </button>
       <strong>Try again!</strong>
       <a href="#" class="alert-link">
@@ -29,14 +29,16 @@ function checkGuess(e) {
   } else if (guess === correctAns) {
     warning.innerHTML = `<div class="alert alert-dismissible alert-success">
       <button type="button" class="close" data-dismiss="alert">
-        &times;
+        
       </button>
       <strong>Well done!</strong> You successfully guessed 
       <a href="#" class="alert-link">
         ${correctAns}
       </a>
-      
     </div>`;
+    setTimeout(function () {
+      window.location.reload();
+    }, 10000);
   } else {
     warning.innerHTML = `<div class="alert alert-dismissible alert-warning">
   <button type="button" class="close" data-dismiss="alert"></button>
